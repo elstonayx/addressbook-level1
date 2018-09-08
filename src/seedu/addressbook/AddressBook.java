@@ -395,6 +395,7 @@ public class AddressBook {
      */
     private static String[] splitCommandWordAndArgs(String rawUserInput) {
         final String[] split =  rawUserInput.trim().split("\\s+", 2);
+        //split[0] = split[0].toLowerCase();
         return split.length == 2 ? split : new String[] { split[0] , "" }; // else case: no parameters
     }
 
